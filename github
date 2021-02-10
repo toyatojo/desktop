@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			text-align: center;
+			background-color: #8A2BE2;
+            		}
+       .hi{
+       	font-family: Impact;
+       	color: #0000cc;
+       	background-color: #00ff7f;
+       	padding: 20px;
+       	font-size: 40px;
+       }
+       div {
+       background-color: yellow;     	 
+       	font-family: Comic Sans MS;
+        padding: 6px;
+        font-size: 30px;
+
+              }
+              #FN{
+              	text-align: center;
+              	font-size: 30px;
+              }
+              #SN{
+              	text-align: center;
+              	font-size: 30px;
+              }
+
+	</style>
+	<script type="text/javascript">
+	function add(){
+     var result=
+     Number(document.getElementById('FN').value)+
+     Number(document.getElementById('SN').value);
+     document.getElementById('B1').value=result;		
+	}
+	function sub(){
+     var result=
+     Number(document.getElementById('FN').value)-
+     Number(document.getElementById('SN').value);
+     document.getElementById('B2').value=result;
+ }
+ function mul(){
+     var result=
+     Number(document.getElementById('FN').value)*
+     Number(document.getElementById('SN').value);
+     document.getElementById('B3').value=result;
+ }
+ function div(){
+     var result=
+     Number(document.getElementById('FN').value)/
+     Number(document.getElementById('SN').value);
+     document.getElementById('B4').value=result;
+ }
+</script>
+	<title>Javascript</title>
+</head>
+<body>
+
+<h1>Mini Calculator</h1>
+<div><b>FIRST NUMBER</b>
+	<input type="number" id="FN">
+</div><br>
+<div><b>SECOND NUMBER</b>
+<input type="number" id="SN">
+</div><br>
+<span><input type="button" value="ADDITION" id="B1" onclick="add()" class="hi"></span>
+<span><input type="button" value="SUBTRACTION" id="B2" onclick="sub()"class="hi"></span>
+<span><input type="button" value="MULTIPLICATION" id="B3" onclick="mul()"class="hi"></span>
+<span><input type="button" value="DIVISION" id="B4" onclick="div()"class="hi"></span>
+</body>
+</html>
